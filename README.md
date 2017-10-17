@@ -10,10 +10,7 @@
 样本方差: 样本中各数据与样本平均数的差的平方和的平均数
 样本标准差: 样本方差的算术平方根
 
-
-
 2.概率密度
-
 
 
 3.协方差and相关系数
@@ -22,4 +19,8 @@
 ```
 
 * 方差计算公式
+
+![输入图片说明](https://github.com/qccr-twl2123/PythonANS/blob/master/images/方差.png "在这里输入图片标题")
+
 * 标准差计算公式
+![输入图片说明](https://github.com/qccr-twl2123/PythonANS/blob/master/images/标准差.png "在这里输入图片标题")
