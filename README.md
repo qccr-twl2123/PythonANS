@@ -1,6 +1,6 @@
-# PythonANS
+## PythonANS
 
-#### 统计学基础概念
+### 统计学基础概念
 ```text
 1.方差 and 标准差
 共同点:描述样本的离散程度,即波动性
@@ -31,7 +31,7 @@ d1.std() #标准差
 ![输入图片说明](https://github.com/qccr-twl2123/PythonANS/blob/master/images/标准差.png "在这里输入图片标题")
 
 
-#### 推断统计
+### 推断统计
 * 置信区间,置信水平
 ```text
 置信区间是我们所计算出的变量存在的范围
