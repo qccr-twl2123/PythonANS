@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-import pandas as pd
 import numpy as np
-import movingAverage as ma
+import pandas as pd
 
+import movingAverage as ma
 
 #1.
 dow = pd.read_csv('Data/Part5/004/problem30-1.csv',
@@ -61,8 +61,8 @@ aapl.index = pd.to_datetime(aapl.index,format='%Y-%m-%d')
 
 import candle
 candle.candleLinePlots(aapl['2014-01':'2014-02'],
-    candleTitle='Candle Plot of AAPL',
-    Data=aapl.Close['2014-01':'2014-02'])
+                       candleTitle='Candle Plot of AAPL',
+                       Data=aapl.Close['2014-01':'2014-02'])
 
                        
 aapl1 = aapl[:'2014-05']

@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 
-import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+import pandas as pd
+
 import candle
+
 
 def bbands(tsPrice,period=20,times=2):
     upBBand=pd.Series(0.0,index=tsPrice.index)
@@ -33,10 +34,10 @@ GSPC1 = GSPC[:'2014-02']
 
 
 candle.candleLinePlots(GSPC1,
-  candleTitle='Candle Plot of SPY500',
-  Data=GSPC1.Close)
+                       candleTitle='Candle Plot of SPY500',
+                       Data=GSPC1.Close)
 
-candle.candleLinePlots(GSPC1,candleTitle='Candle Plot of SPY500',
+candle.candleLinePlots(GSPC1, candleTitle='Candle Plot of SPY500',
                        Data=bbands(GSPC1.Close)[['downBBand','upBBand']])
                        
 upbound = pd.rolling_max(GSPC.High,10)

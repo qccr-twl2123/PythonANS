@@ -1,12 +1,8 @@
 # -*- coding: utf-8 -*-
 
-import pandas as pd
-
-import numpy as np
-
-import movingAverage as ma
-
 import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
 
 import candle
 
@@ -19,8 +15,8 @@ cjzq.index.name='Date'
 cjzq.index = pd.to_datetime(cjzq.index,format='%Y-%m-%d')
 
 candle.candleVolume(cjzq,
-    candletitle='Candle Plot of Changjiang Securities',
-    bartitle='Volume of Changjiang Securities')
+                    candletitle='Candle Plot of Changjiang Securities',
+                    bartitle='Volume of Changjiang Securities')
 
 #2.
 close = cjzq.Close

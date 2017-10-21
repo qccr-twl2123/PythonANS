@@ -1,6 +1,13 @@
-## PythonANS
-
 ### 统计学基础概念
+
+### 导图概览
+
+![输入图片说明](https://github.com/qccr-twl2123/PythonANS/blob/master/images/0-统计-导图概览.png "在这里输入图片标题")
+
+
+
+
+
 ```text
 1.方差 and 标准差
 共同点:描述样本的离散程度,即波动性
@@ -14,12 +21,6 @@
 d1.var() #方差
 d1.std() #标准差
 
-    
-2.概率密度
-
-
-3.协方差and相关系数
-
 ```
 
 * 方差计算公式
@@ -31,6 +32,37 @@ d1.std() #标准差
 ![输入图片说明](https://github.com/qccr-twl2123/PythonANS/blob/master/images/标准差.png "在这里输入图片标题")
 
 
+### 连续随机变量研究范畴
+```text
+
+from scipy import stats
+from scipy.stats import norm
+
+rvs: Random Variates
+pdf: Probability Density Function
+cdf: Cumulative Distribution Function
+sf: Survival Function (1-CDF)
+ppf: Percent Point Function (Inverse of CDF)
+isf: Inverse Survival Function (Inverse of SF)
+stats: Return mean, variance, (Fisher’s) skew, or (Fisher’s) kurtosis
+moment: non-central moments of the distribution
+
+rvs:随机变量
+pdf：概率密度函。
+cdf：累计分布函数
+sf：残存函数（1-CDF）
+ppf：分位点函数（CDF的逆）
+isf：逆残存函数（sf的逆）
+stats:返回均值，方差，（费舍尔）偏态，（费舍尔）峰度。
+moment:分布的非中心矩。
+
+
+
+
+
+```
+
+
 ### 推断统计
 * 置信区间,置信水平
 ```text
@@ -39,7 +71,6 @@ d1.std() #标准差
 
 举例来讲，有百分之九十五的把握，真正的数值在我们所计算出的范围里。
 在这里，百分之九十五九十置信水平，而我们计算出的范围，就是置信区间。
-
 
 
 ```

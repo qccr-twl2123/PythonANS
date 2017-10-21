@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import pandas as pd
-import numpy as np
 def rsi(price,period=6):
     import pandas as pd
     clprcChange=price-price.shift(1)
@@ -30,8 +28,8 @@ def rsi(price,period=6):
 
 #1
 
-import pandas as pd
 import numpy as np
+import pandas as pd
 
 jtyh = pd.read_csv('Data/Part5/003/problem29-1.csv',
                 index_col='date')               
@@ -53,7 +51,7 @@ jtyh.index.name='Date'
 jtyh.index = pd.to_datetime(jtyh.index,format='%Y-%m-%d')
 
 import candle
-candle.candlePlot(jtyh,'Candle Plot of Bank of Communications')
+candle.candlePlot(jtyh, 'Candle Plot of Bank of Communications')
 
 RSI6 = rsi(jtyh.Close,6)
 RSI30 = rsi(jtyh.Close,30)
