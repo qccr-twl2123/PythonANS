@@ -6,7 +6,7 @@
 
 
 ### 描述性统计-表格和图形法
-![输入图片说明](https://github.com/qccr-twl2123/PythonANS/blob/master/images/1-描述性统计： 「表格和图形法」.png "在这里输入图片标题")
+![输入图片说明](https://github.com/qccr-twl2123/PythonANS/blob/master/images/1-描述性统计表格和图形法.png "在这里输入图片标题")
 
 ```text
 1.理解什么是定量分析,什么是定性分析?
@@ -72,8 +72,6 @@
 * 标准差计算公式
 
 ![输入图片说明](https://github.com/qccr-twl2123/PythonANS/blob/master/images/标准差.png "在这里输入图片标题")
-
-
 
 
 
