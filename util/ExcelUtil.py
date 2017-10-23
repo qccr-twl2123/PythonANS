@@ -2,6 +2,7 @@
 import xlrd
 import csv
 from os import sys
+import pandas as pd
 
 
 def csv_from_excel(excel_file):
@@ -19,5 +20,6 @@ def csv_from_excel(excel_file):
 
 
 if __name__ == "__main__":
-     csv_from_excel(sys.argv[1])
+    data_xls = pd.read_excel('2017102015464838128.xls', 'Sheet1', index_col=None)
+    data_xls.to_csv('your_csv.csv', encoding='utf-8')
 
