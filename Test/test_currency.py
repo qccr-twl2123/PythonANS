@@ -10,16 +10,17 @@ sys.setdefaultencoding('utf-8')
 
 def draw_line(china_currency):
     df = china_currency
-    print df
-    dates = pd.to_datetime(list(df.columns)[1:-1],format="%Y-%m-%d")
-    print  dates
-    print df.T[0]
+    dates =pd.to_datetime(df.T.index,format="%Y-%m-%d")
+    print dates
+    m2 = df.T["M2"].values
+    m1 = df.T["M1"].values
+    plt.xticks(dates,rotation=45)
+    plt.plot(m2,c="r")
+    plt.plot(m1,c="g")
 
-    # dates = df.index[1:-1]
-    # x = pd.to_datetime(dates,format="%Y-%m")
-    # print x
+    plt.show()
 
 
 
 if __name__=="__main__":
-     draw_line(pd.read_csv("2017-china-currency-provider.csv"))
+     draw_line(pd.read_csv("2017-china-currency-provider.csv",index_col="Item"))
