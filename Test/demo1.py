@@ -2,5 +2,9 @@
 # -*- coding: UTF-8 -*-
 
 import pandas as pd
-index = pd.date_range('1/1/2000', periods=9, freq='D')
-print  index
+import tushare as ts
+
+df = ts.profit_data(top=60)
+df.sort('shares',ascending=False)
+
+print  df

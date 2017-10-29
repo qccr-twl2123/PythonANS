@@ -11,8 +11,8 @@ Open=ChinaBank.Open
 
 
 
-%matplotlib qt
-plt.rcParams['font.sans-serif']=['SimHei']
+# %matplotlib qt
+# plt.rcParams['font.sans-serif']=['SimHei']
 
 import matplotlib.pyplot as plt
 

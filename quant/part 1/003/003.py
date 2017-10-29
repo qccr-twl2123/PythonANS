@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
 # Section 3.1
 7
 
@@ -13,11 +15,7 @@ x
 VariableName = 3
 print(VariableName)
 
-变量名称 = 3
-print(变量名称)
 
-変数の名前 = 4
-print(変数の名前)
 
 dir()
 
@@ -80,7 +78,7 @@ ComplexNumber1=complex(3,6)
 ComplexNumber1
 
 # Note: Code in the next line will return an error message
-3+6i
+# 3+6i
 
 3+6j
 
