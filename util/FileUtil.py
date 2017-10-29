@@ -28,7 +28,7 @@ class FileUtil(object):
             """
             下划线字符转驼峰字符
             """
-            camel_character =""
+            camel_character = ""
             for i in range(len(character)):
                 if(i > 0):
                     camel_character += character[i].capitalize()
