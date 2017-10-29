@@ -13,7 +13,7 @@ class FileUtil(object):
       def __init__(self,fileName):
           self.__fileName= fileName
 
-      def convertFileToDict(self):
+      def convert_file_to_dict(self):
           file = open(self.__fileName)
           key_list = []
           values_list = []
@@ -38,4 +38,4 @@ class FileUtil(object):
 
 if __name__ == '__main__':
        fileUtil =  FileUtil("demo.text")
-       print fileUtil.convertFileToDict()
+       print fileUtil.convert_file_to_dict()
