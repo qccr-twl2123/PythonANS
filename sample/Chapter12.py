@@ -5,19 +5,19 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #1.
-Money = pd.read_csv('Data/Part1/012/Money.csv',
-                    index_col='date')
-
-axis1 = plt.subplot()
-axis1.plot(Money.index,Money.m,'-')
-plt.title('Money Supply of Canada')
-plt.xlabel('Year')
-axis2 = axis1.twinx()
-axis2.plot(Money.y,'-')
-plt.show()
+# Money = pd.read_csv('../Data/Part1/012/Money.csv',
+#                     index_col='date')
+#
+# axis1 = plt.subplot()
+# axis1.plot(Money.index,Money.m,'-')
+# plt.title('Money Supply of Canada')
+# plt.xlabel('Year')
+# axis2 = axis1.twinx()
+# axis2.plot(Money.y,'-')
+# plt.show()
 #
 # #2.
-# Journals = pd.read_csv('Data/Part1/012/Journals.csv')
+# Journals = pd.read_csv('../Data/Part1/012/Journals.csv')
 # plt.scatter(Journals.citestot,Journals.libprice)
 # plt.title('Price vs Citations')
 # plt.xlabel('Citations')
@@ -25,21 +25,23 @@ plt.show()
 # plt.show()
 #
 # #3.
-# mtcars = pd.read_csv('Data/Part1/012/mtcars.csv')
-# types=np.array([0.2,0.6])
-# number = mtcars.groupby(['gear','vs'])['vs'].agg(len)
-# plt.bar(types,number.ix[3],width=0.3,label='gear=3')
-# plt.bar(types,number.ix[4],width=0.3,
-# 	bottom=number.ix[3],color='r',
-# 	label='gear=4')
-# plt.bar(types,number.ix[5],width=0.3,
-# 	bottom=number.ix[3]+number.ix[4],
-# 	color='y',label='gear=5')
-# plt.xlim([0,1])
-# plt.ylim([0,25])
-# plt.legend()
-# plt.xticks(types+0.3/2,[0,1])
-# plt.show()
+mtcars = pd.read_csv('../Data/Part1/012/mtcars.csv')
+types = np.array([0.2,0.6])
+number = mtcars.groupby(['gear','vs'])['vs'].agg(len)
+print number
+print number.ix[3]
+plt.bar(types,number.ix[3],width=0.3,label='gear=3')
+plt.bar(types,number.ix[4],width=0.3,
+	bottom=number.ix[3],color='r',
+	label='gear=4')
+plt.bar(types,number.ix[5],width=0.3,
+	bottom=number.ix[3]+number.ix[4],
+	color='y',label='gear=5')
+plt.xlim([0,1])
+plt.ylim([0,25])
+plt.legend()
+plt.xticks(types+0.3/2,[0,1])
+plt.show()
 #
 # #4.
 # Arthritis = pd.read_csv('Data/Part1/012/Arthritis.csv')
