@@ -5,15 +5,17 @@
 
 import tushare as ts
 import matplotlib.pyplot as plt
-import pandas as pd
+import  pandas as pd
+
+
 import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
 
-data_xls = pd.read_excel('b.xlsx', 'Sheet1', index_col = 0)
+data_xls = pd.read_excel('线上合同未生成,需要提取数据loanLimit001.xlsx', 'Sheet2', index_col = 0)
 df = data_xls.T
-# print  df
+# print df
 
 file = open('demo.text')
 
@@ -33,10 +35,6 @@ for  line in  file.readlines():
     #value 值集合生成
     values_list.append(line.split()[1])
 
-
-
-print key_list
-print values_list
 
 key_value = dict(zip(key_list,values_list))
 print key_value
