@@ -13,7 +13,7 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 
-data_xls = pd.read_excel('线上合同未生成,需要提取数据loanLimit001.xlsx', 'Sheet2', index_col = 0)
+data_xls = pd.read_excel('loanlimit.xlsx', 'Sheet2', index_col = 0)
 df = data_xls.T
 # print df
 
