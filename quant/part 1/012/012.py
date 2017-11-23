@@ -12,7 +12,7 @@ Close=ChinaBank.Close
 import matplotlib.pyplot as plt
 plt.plot(Close['2014'])
 
-%matplotlib qt
+# %matplotlib qt
 plt.plot(Close['2014'])
 plt.show()
 
