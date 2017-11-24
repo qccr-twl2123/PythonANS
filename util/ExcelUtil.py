@@ -25,4 +25,5 @@ if __name__ == "__main__":
     # data_xls = pd.read_excel('2016012017255038120.xls', 'Sheet1', index_col=None)
     # data_xls.to_csv('2015.csv', encoding='utf-8')
     print np.random.choice(['JGood', 'is', 'a', 'handsome', 'boy'],size=10)
+    print np.random.binomial(100,0.5,10)
 
