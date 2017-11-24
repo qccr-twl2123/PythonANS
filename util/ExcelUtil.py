@@ -3,6 +3,8 @@ import xlrd
 import csv
 from os import sys
 import pandas as pd
+import random
+import numpy as np
 
 
 def csv_from_excel(excel_file):
@@ -20,6 +22,7 @@ def csv_from_excel(excel_file):
 
 
 if __name__ == "__main__":
-    data_xls = pd.read_excel('2016012017255038120.xls', 'Sheet1', index_col=None)
-    data_xls.to_csv('2015.csv', encoding='utf-8')
+    # data_xls = pd.read_excel('2016012017255038120.xls', 'Sheet1', index_col=None)
+    # data_xls.to_csv('2015.csv', encoding='utf-8')
+    print np.random.choice(['JGood', 'is', 'a', 'handsome', 'boy'],size=10)
 
