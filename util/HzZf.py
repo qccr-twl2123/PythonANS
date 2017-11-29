@@ -31,11 +31,8 @@ class HzZf(object):
         for detail_url in self.get_list_content():
             html = requests.get(detail_url)
             html.encoding = "gb2312"
-            print detail_url
-            print html.text
             soup = BeautifulSoup(html.text,"lxml")
-
-            title = soup.find_all("h1")
+            title = soup.find_all("h1",class_="fl f14 link1")
             print title
 
 
