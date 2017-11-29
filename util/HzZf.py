@@ -40,7 +40,7 @@ class HzZf(object):
 
 
 if __name__ == '__main__':
-    url = 'http://www.19lou.com/thread/category/structure/search/result?fid=1638&m=10003&page=1'
+    url = 'http://www.19lou.com/thread/category/structure/search/result?fid=1638&m=10003&page=2'
     zf = HzZf(url)
     zf.get_detail_content()
 
