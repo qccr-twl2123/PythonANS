@@ -12,4 +12,5 @@ f,p = f_oneway(a,b,c)
 print f
 print p
 x = a+b+c
-print stats.t.interval(0.95,np.mean(x),stats.sem(x))
+print stats.t.interval(0.95,len(x)-1,np.mean(x),stats.sem(x))
+
