@@ -24,11 +24,7 @@ from statsmodels.formula.api import ols
 import statsmodels.stats.anova as anova
 
 returns = pd.DataFrame(pd.concat([MANA.HAM1,MANA.HAM3,MANA.HAM4]))
-
 returns['Class'] = ['HAM1' for i in range(132)]+['HAM3' for i in range(132)]+['HAM4' for i in range(132)]
-
 returns.columns = ['Return','Class']
-
 model = ols('Return~C(Class)',data=returns).fit()
-
 print(anova.anova_lm(model))

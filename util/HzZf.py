@@ -15,7 +15,6 @@ class HzZf(object):
     def get_content(self):
         html = requests.get(self._url)
         html.encoding = "gb2312"
-        print html.text
         return html.text
 
     def get_list_content(self):
@@ -32,7 +31,7 @@ class HzZf(object):
             html = requests.get(detail_url)
             html.encoding = "gb2312"
             soup = BeautifulSoup(html.text,"lxml")
-            title = soup.find_all("h1",class_="fl f14 link1")
+            title = soup.find_all("span",attrs={"itemprop":"http://purl.org/dc/terms/title"})
             print title
 
 
