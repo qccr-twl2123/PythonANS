@@ -6,6 +6,9 @@ import tushare as ts
 import  numpy as np
 
 
-df = ts.profit_data(top=60)
-df.sort('shares',ascending=False)
+list1 = [1,2,3,4]
+list2 = [3,4,6,6]
+
+# print sum((list1-list2)**2)
+print (sum((list1-list2)**2))
 
