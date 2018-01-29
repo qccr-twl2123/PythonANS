@@ -31,8 +31,10 @@ df.colunms
 df.values
 # 数据转置
 df.T
-# 排序
+# 按值排序
 df.sort(columns='sort')
+# 按index排序
+df.sort_index(axis=1, ascending=False)
 ```
 
 * 选择算法
@@ -41,9 +43,23 @@ df.sort(columns='sort')
 df['open']
 # 2.选择多行
 df[1:3]
+# 使用标签获取横截面
+df.loc[dates[0]]
+# 使用标签选择多轴
+df.loc[:,['A','B']]
+# 显示标签切面,包含两个端点
+df.loc['20130102':'20130104',['A','B']]
+# 获取标量值
+df.loc[dates[0],'A']
+df.at[dates[0],'A']
 ```
 
 * 合并
 
 * 时间序列
+
+* 参考
+```text
+http://python.jobbole.com/84416/
+```
 
