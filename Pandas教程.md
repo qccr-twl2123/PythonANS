@@ -75,6 +75,9 @@ print df.groupby('key1')['data1','data2'].agg(lambda arr:arr.max()-arr.min())
 
 * 参考
 ```text
+基本使用指南
 http://python.jobbole.com/84416/
+分组运算
+https://my.oschina.net/lionets/blog/280332
 ```
 
